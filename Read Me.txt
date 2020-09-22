@@ -1,0 +1,15 @@
+First off you need to open MS Hearts...If you double click here this will be done for you...Next this project is going to attempt to find the window...by using cGetWindow("AfxFrameOrView")...  AfxFrameOrView is the call sign programmers gave windows...So when calling this, it will find the hWnd for you...Now this project will edit the window depending on what you click below...
+
+Also, you may have noticed that you cant figure out how to find the call signs?!?!
+
+this requires a spy program, which im going to include here now...
+just place the WindowClass instead of AfxFrameOrView, also you need to know that
+that wont work if there is a parent, if theres a parent call it like this...
+
+dim somthing as long
+
+somthing = FindWindowEx(parent call sign, 0, windows class, vbnullstring)
+
+thx, and if theres any other problems just email me...
+
+cyberascii
